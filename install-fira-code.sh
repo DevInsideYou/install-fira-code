@@ -10,11 +10,11 @@ if [ ! -d "${fonts_dir}" ]; then
     mkdir -p "${fonts_dir}"
 fi
 
-for type in Bold Medium Regular Retina; do
+for type in Bold Light Medium Regular Retina; do
     file_path="${HOME}/.local/share/fonts/FiraCode-${type}.ttf"
     file_url="https://github.com/tonsky/FiraCode/blob/master/distr/ttf/FiraCode-${type}.ttf?raw=true"
     echo "wget -O $file_path $file_url"
-    wget -O "${file_path}" "${file_url}"
+    wget -qO "${file_path}" "${file_url}"
 done
 
 echo "fc-cache -f"
