@@ -21,6 +21,7 @@ for type in Bold Light Medium Regular Retina; do
 done
 
 echo "fc-cache -f"
+echo "this should take half a minute or so..."
 fc-cache -f
 
 # remove yourself
