@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# remove yourself
+rm $0
+
 # install fira code
 fonts_dir="${HOME}/.local/share/fonts"
 if [ ! -d "${fonts_dir}" ]; then
@@ -17,6 +20,3 @@ done
 echo "fc-cache -f"
 echo "this should take half a minute or so..."
 fc-cache -f
-
-# remove yourself
-rm $0
