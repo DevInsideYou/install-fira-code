@@ -16,4 +16,4 @@ for type in Bold Light Medium Regular Retina SemiBold; do
 done
 
 echo "Updating the font cache. This should take half a minute or so..."
-fc-cache -f
+fc-cache -fv
